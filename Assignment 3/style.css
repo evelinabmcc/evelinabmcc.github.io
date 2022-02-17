@@ -1,0 +1,81 @@
+body{
+    background-image: url("beach.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+.clockWrap{
+    height: 500px;
+    width: 500px;    
+    margin: 100px 100px;
+}
+
+.clock{
+    height: 61%;
+    width:61%;
+    background-image: url('clockimage.png');
+    background-repeat:no-repeat;
+    background-color: rgba(238, 159, 169, 0.5);
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-position: 50% 50%;
+}
+
+.clockWrap img{
+    width: 120%;
+    height: 120%;
+}
+
+.innerdiv{
+    background-color: rgba(107, 103, 103, 0.5);
+    width:550px;
+    height: 120px;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+p{
+    color:white;
+    padding-top: 10px;
+}
+
+a{
+    color: rgb(17, 17, 135);
+}
+
+.hours{
+    width:30%;
+    margin-top: 127px;
+    margin-left: 152px;
+    position: absolute;
+    transform-origin: left center;
+    animation-name:moveHours;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.minutes{
+    transform:rotate(-90deg);
+    width: 32%;
+    height: 88px;
+    margin-left: 148px;
+    margin-top: 112px;
+    position: absolute; 
+    transform-origin: left center;
+    animation-name:moveMinutes;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveHours{   
+    0%{transform:rotate(0deg);}
+    100%{transform: rotate(30deg);}
+}
+
+@keyframes moveMinutes{
+    0%{transform:rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
