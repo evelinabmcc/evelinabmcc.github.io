@@ -1,0 +1,264 @@
+html{
+    height: 100%;
+    width:100%;
+    /* font-size: 2vw; */
+}
+body{
+    min-height: 100vh;
+    /* width:auto; */
+} 
+.wrapper{
+    /* align-items: center;
+    display: flex;
+    justify-content: center;*/
+    height:100%;
+    padding: 2% 4% 2% 4%;
+    width:100%; 
+    background-color: bisque;
+}
+
+/* Nav-Bar */
+.nav-bar{
+    /* height: 10%; */
+    margin-bottom: 2%;
+}
+.icon{
+    /* position: relative; */
+    animation-name: turn;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* width: 20%;
+    height: 20%; */
+}
+@keyframes turn{
+    0%{transform: rotate(45deg);}
+    50%{transform: rotate(-90deg);}
+    100%{transform:rotate(45deg);}
+}
+.titles{
+    animation-name: animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate{
+    from {color: black;}
+    to {color: red;}
+}
+.titles h1{
+    animation-name: grow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes grow{
+    from {font-weight: normal;}
+    to {font-weight: bold;}
+}
+
+
+
+/* Slideshow */
+.stage{
+    height: 7vh;
+    /* width: 100vh; */
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid black;
+    /* position:relative; */
+}
+.slide-wrapper{
+    height: 100%;
+    width: 300%;
+    border: 1px solid yellow;
+    animation: slide-left 15s infinite linear;
+    flex-wrap: nowrap;  
+}
+.slide{  
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    /* animation: 3s slide-left; */
+    display: flex;
+    float: left;
+    /* justify-content: center; */
+    /* top: 100%;
+    left: 0;
+    animation: 12 s autoplay infinite ease-in-out; */
+}
+.slide1{
+    background-color: #fec89a;
+    /* background-size:100% 100%; */
+    /* animation-delay: 0s; */
+}
+.slide2{
+    background-color: #fcd5ce;
+    /* background-size:100% 100%; */
+    /* animation-delay: 4s; */
+}
+.slide3{
+    background-color: #ffb5a7;
+    /* animation-delay: 8s; */
+}
+@keyframes slide-left{
+    0% {margin-left: 0%}
+    33% {margin-left: -100}
+    66% {margin-left: -200}
+    99% {margin-left: 0%}
+}
+/* @keyframes autoplay{
+    0% {top:100%}
+    4% {top: 0%}
+    33.33%% {top: 0%}
+    100% {top: -100%}
+} */
+.flashy-title{
+    font-size:larger;
+    font-weight: bold;
+}
+
+/* Slideshow */
+.slideshow{
+    height: 10%;
+    margin-bottom: 2%;
+}
+
+/* Main Box || Flower Background Image */
+.main-box{
+    /* height: 20%; */
+    margin-top: 10%;
+    margin-bottom: 2%;
+    /* width:auto; */
+}
+.picture-box{
+    max-height: 70%;
+}
+.bg-photo{
+    position:relative;
+    overflow: hidden;
+}
+.text-block{
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    height: relative;
+    min-height: 17%;
+    width: relative;
+    max-width: 45%;
+    border: 3px solid white;
+    padding: 1% 1% 1% 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    /* margin-bottom: 5%; */
+    background-color: rgba(128,128,128,0.9);
+}
+.text-bg{
+    margin: auto;
+    width: 98%;
+    overflow: hidden;
+}
+
+/* Two Gradient Blocks */
+.two-blocks{
+    margin-bottom: 2%;
+}
+.col-wrap{
+    width:100%;
+    height:100%;
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('../images/intro_img1.jpg');
+    background-size: cover;
+}
+.left-block p{
+    border: 3px solid rgb(247, 247, 123);
+    padding: 5% 5% 5% 5%;
+    margin-left: 10%;
+    margin-bottom: 20%;
+    width: 80%;
+    color: white;
+}
+.right-block{
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+    padding: 5% 5% 5% 5%;
+}
+
+/* Single Products */
+.single-products{
+    /* width: 100%; */
+    margin-bottom: 2%;
+    padding: 2% 2% 2% 2%;
+}
+a.btn:hover{
+    background-color: #fec89a;
+    transform:scale(1.3,1.3);
+}
+.mdlwindow{
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 20%;
+    bottom: 20%;
+    left: 10%;
+    right: 10%;
+    opacity: 0; 
+    pointer-events:none;
+    border: 5px solid red;
+    padding: 1% 1% 1% 1%;
+    overflow: scroll;
+}
+.mdlwindow:target{
+    opacity:1;
+    pointer-events:auto;
+}
+.msgblock{
+    height: 100%;
+    width: 100%;
+    margin: 1% 5% 1% 0%;
+    font-weight: bold;
+   
+}
+.msgblock a{
+    background-color: rgb(163, 161, 161);
+    padding: 2% 2% 1% 2%;
+    margin-bottom: 1%;
+    
+}
+.msgblock-description{
+    background-color: gray;
+    /* margin-bottom: 2%;
+    margin-right: 2%; */
+    /* margin: 1% -7% 1% -7%; */
+    /* max-width:auto; */
+    max-height: 30%;
+    padding: 5% 7% 5% 7%;
+    position: absolute;
+}
+.msgblock-description.btn{
+    margin-left:2%;
+    margin-bottom: 2%;
+    background-color: rgb(202, 202, 202);
+}
+.prod-img1{
+    /* width: 100%;
+    height: 100%;
+    background: url('item1.png'); */
+    /* background-size: cover; */
+}
+
+/* Gift Sets */
+.gift-sets{
+    margin-bottom: 2%;
+    padding: 2% 2% 2% 2%;
+}
+.msgblock-description-set{
+    max-height: 37%;
+    /* position: absolute; */
+} 
+
+/* Footer */
+.footer{
+    margin: 0% -4% 0% -4%;
+    padding: 2% 2% 2% 2%;
+    background-color: #212529;
+    text-align: center;
+    color: #fffffc;
+}
