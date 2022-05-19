@@ -1,0 +1,201 @@
+ /* General CSS */
+html{
+    text-align: center;
+    height: 100%;
+} 
+
+body{
+    width: 90%;
+    height: 100%;
+    background-color: #d9d9d9;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', monospace;
+    margin: 0 auto;
+}
+.page-container{
+    position:relative;
+    height:100%;
+}
+nav, footer{
+    background-image: linear-gradient(to right, #545252, #353535,#646161);
+}
+
+/* NavBar CSS */
+nav{
+    height: 86px;
+    /* background-color: #353535; */
+    color: white;
+    font-size: 18px;
+    top: 0;
+    display: flex;
+    padding: 5px;
+}
+.logo{
+    height: 100%;
+    width:86px;
+    margin-left: 5%;
+}
+.logo>img{
+    height: 100%;
+    width: 100%;
+}
+.drop-menu>ul{
+    height: 30%;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    border: 3px solid rgb(2, 2, 2);
+    background-color: rgb(10, 10, 10);
+    padding: 10% 70%;
+}
+.drop-menu>ul>li{
+    margin: 20%;
+}
+.drop-menu>ul>li:hover{
+    /* text-shadow: 2px 2px 10px #648183; */
+    text-decoration: underline;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Main Section CSS */
+section>h1{
+    font-family: fantasy;
+    margin-top: 5%;
+    margin-bottom: 0;
+    text-shadow: 1px 1px white;
+}
+.row{
+    height: 450px;
+    margin: 0 5% 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    background-color: #3c6e71;
+    background-image: linear-gradient(#3c6e71, #6cc7ccc7);
+    padding: 2% 5% 2% 5%;
+}
+.modal{
+    height: 100%;
+    width: 29%;
+    /* border: 2px solid green; */
+    text-align: center;
+    font-family: "Fantasy", monospace; 
+}
+.modal>img{
+    height: 90%;
+    width: 100%;
+    /* border: 2px solid rgb(128, 124, 0); */
+    padding-bottom: 5px;
+}
+.btn{
+    font-size:calc(12px + 1vw);
+    font: white;
+    text-decoration: none;
+    margin-top: 3%;
+    /* border: 2px solid #284b63; */
+    background-color: #284b63;
+    border-radius: 2px;
+    padding: 1% 10% 1% 10%;
+    height: 10%;
+    font-family: 'Times New Roman', monospace;
+}
+
+.mdlwindow{
+    background-color: #353535ad;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    /* opacity must be turned to 1 in order to visualize */
+    opacity: 0; 
+    pointer-events:none;
+}
+.mdlwindow:target{
+    opacity:1;
+    pointer-events:auto;
+}
+
+.msgblock{
+    background-color:#3c6e71bb;
+    height: 70%;
+    width: 40%;
+    min-height: 400px;
+    min-width: 100px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 1% 5% 1% 5%;
+    text-align: center;
+    color: white;
+    font-size:calc(10px + 0.5vw);
+    font-family:'Times New Roman', Times, serif;
+}
+.roww{
+    height: 50%;
+    min-height: 100px;
+    width: 90%;
+    margin: 0 auto 5% auto;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    text-align: left;
+    border-radius: 3%;
+    background-color: #284b63;
+    color: white;
+    overflow: hidden;
+
+}
+.box{
+    width: 45%;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.roww>p{
+    height: 100%;
+    margin: auto;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 20% 10% 20% 10%;
+}
+.box>img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid yellow;
+}
+.msgblock>a{
+    background-color: #353535;
+    padding: 3%;
+    border-radius: 5%;
+    font-size: 100%;
+}
+.msgblock>h1{
+    font-size:calc(12px + 2vw);
+    /* margin-top: 5%; */
+}
+
+
+
+/* Footer CSS */
+footer{
+    height: 5rem;
+    /* background-color: #353535; */
+    color: white;
+    text-align: center;
+    bottom: 0;
+    padding-top: 0.5%;
+}
+footer>a{
+    color: white;
+    text-decoration: none;
+}
